@@ -3,68 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Maria Amélia Campos</title>
-
+    <title>@MARIAAMELIA.DF 💚</title>
+    
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
+    <!-- Background interativo com parallax -->
+    <div class="parallax-bg" id="parallaxBg"></div>
+    <div class="overlay-gradient"></div>
+    
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="main-title">@MARIAAMELIA.DF</h1>
+                
+                <div class="hero-image-wrapper">
+                    <img src="./FOTO01.png" alt="Maria Amélia" class="hero-image" id="heroImage">
+                </div>
+                
+                <div class="hero-text">
+                    <p class="subtitle">Vice-Presidente do PL Mulher DF</p>
+                    <p class="subtitle">Pré-Candidata a Deputada Federal</p>
+                    <p class="description">Política, Família e Compromisso com Brasília</p>
+                </div>
+            </div>
+        </section>
 
-<main class="container">
+        <!-- SOCIAL SECTION -->
+        <section class="social-section">
+            <h2 class="section-title">Acompanhe</h2>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/mariaameliadoces/" target="_blank" class="social-link instagram-link">
+                    <span class="emoji">📸</span>
+                    <span class="text">Instagram</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/mariaamelia/" target="_blank" class="social-link linkedin-link">
+                    <span class="emoji">💼</span>
+                    <span class="text">LinkedIn</span>
+                </a>
+                
+                <a href="mailto:mariaameliacomunicacao@gmail.com" class="social-link contact-link">
+                    <span class="emoji">📩</span>
+                    <span class="text">Contato</span>
+                </a>
+            </div>
+        </section>
 
-    <!-- HEADER -->
-    <section>
-        <h1 class="main-title">Maria Amélia Campos</h1>
+        <!-- MESSAGE SECTION -->
+        <section class="message-section">
+            <h2 class="section-title">
+                Deixe sua Mensagem
+                <span class="heart-accent">💚</span>
+            </h2>
+            <p class="message-description">Pergunta, reclamação ou sugestão? Envie de forma anônima.</p>
+            
+            <form class="message-form">
+                <input type="email" placeholder="Seu e-mail (opcional)" class="form-input">
+                <textarea placeholder="Sua mensagem..." required class="form-textarea"></textarea>
+                <button type="submit" class="form-button">Enviar Mensagem</button>
+            </form>
+        </section>
 
-        <p>🏛️ Vice-Presidente do PL Mulher DF</p>
-        <p>🇧🇷 Pré-Candidata a Deputada Federal</p>
-        <p>Política, Família e Compromisso com Brasília</p>
-    </section>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="logo-footer">
+                <img src="./MARIAAMELIA(branco).webp" alt="Logo Maria Amélia" class="footer-logo">
+            </div>
+            <p class="footer-text">© 2026 Maria Amélia Campos</p>
+            <p class="footer-text">Brasília, DF</p>
+        </footer>
+    </main>
 
-    <!-- SOCIAL -->
-    <section class="social-section">
-        <h2>Acompanhe</h2>
-
-        <a href="https://www.instagram.com/mariaameliadoces/" target="_blank" class="btn instagram">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-
-        <a href="https://x.com/mariaameliadf" target="_blank" class="btn twitter">
-            <i class="fab fa-x-twitter"></i> X (Twitter)
-        </a>
-
-        <a href="https://beacons.ai/mariaameliadoces" target="_blank" class="btn beacons">
-            <i class="fas fa-link"></i> Beacons
-        </a>
-    </section>
-
-    <!-- FORM -->
-    <section class="form-section">
-        <h2>Deixe sua Mensagem</h2>
-        <p>Pergunta, reclamação ou sugestão? Envie de forma anônima.</p>
-
-        <form>
-            <input type="email" placeholder="Seu e-mail (opcional)">
-            <textarea placeholder="Sua mensagem..." required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Maria Amélia Campos</p>
-        <p>Brasília, DF</p>
-    </footer>
-
-</main>
-
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
