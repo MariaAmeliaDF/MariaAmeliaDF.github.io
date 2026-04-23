@@ -1,0 +1,137 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #070707;
+    overflow-x: hidden;
+}
+
+.bg-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+
+    background: url("../img/fe-brasl.jpeg") no-repeat center center;
+    background-size: cover;
+}
+.bg-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0, 39, 118, 0.85),  /* azul PL forte */
+        rgba(0, 119, 200, 0.65)  /* azul mais leve */
+    );
+}
+
+/* OVERLAY AZUL DO PL */
+.bg-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0, 39, 118, 0.85),  /* azul PL */
+        rgba(13, 124, 196, 0.65)
+    );
+}
+
+/* CONTAINER */
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* LOGO */
+.logo-main {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 30px;
+}
+
+/* BIO */
+.bio p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+/* SOCIAL */
+.social-section {
+    margin: 40px 0;
+}
+
+.btn {
+    display: block;
+    margin: 10px 0;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* CORES */
+.instagram {
+    background: #fb05ff7a;
+}
+
+. X {
+    background: #000000c3;
+    color: #ffffff;
+}
+
+.beacons {
+    background: #545454;
+    color: #160361;
+}
+
+/* FORM */
+.form-section {
+    margin-top: 40px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 14px;
+    background: #002776;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bg-overlay::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(
+        circle at 70% 30%,
+        rgba(255,255,255,0.08),
+        transparent 60%
+    );
+}
