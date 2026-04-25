@@ -62,20 +62,21 @@ body{
     box-shadow:0 12px 30px rgba(0,0,0,0.25);
 }
 
+/* LOGO */
+.logo{
+    width:220px;
+    max-width:80%;
+    height:auto;
+    display:block;
+    margin:18px auto;
+}
+
 /* TEXTO */
 .bio{
     color:#fff;
     font-size:16px;
     line-height:1.7;
     margin-bottom:22px;
-}
-
-/* NOME */
-.nome{
-    font-family:'Montserrat', sans-serif;
-    font-size:32px;
-    color:#fff;
-    margin-bottom:18px;
 }
 
 /* LINKS */
@@ -109,6 +110,7 @@ body{
     border-radius:18px;
     padding:18px;
     resize:none;
+    font-family:'Poppins', sans-serif;
 }
 
 .opiniao button{
