@@ -22,7 +22,7 @@ body{
 .overlay{
     position:absolute;
     inset:0;
-    background:rgba(255,255,255,0.55);
+    background:rgba(0,0,0,0.45);
 }
 
 /* CARD */
@@ -32,13 +32,9 @@ body{
     width:100%;
     max-width:430px;
     text-align:center;
-    background:rgba(255,255,255,0.78);
-    border-radius:25px;
-    padding:30px 22px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
-/* FOTO */
+/* FOTO QUADRADA */
 .foto-container{
     display:flex;
     justify-content:center;
@@ -46,10 +42,11 @@ body{
 }
 
 .foto{
-    width:170px;
-    height:170px;
-    border-radius:50%;
+    width:220px;
+    height:220px;
+    border-radius:18px;
     object-fit:cover;
+    object-position:center top;
     border:4px solid #fff;
     box-shadow:0 10px 25px rgba(0,0,0,0.18);
     display:block;
@@ -61,35 +58,28 @@ body{
     font-size:26px;
     font-weight:600;
     letter-spacing:6px;
-    color:#111;
+    color:#fff;
     margin-bottom:18px;
 }
 
-/* BARRAS */
+/* BARRAS IGUAL LINKS */
 .tag{
+    display:block;
     width:100%;
-    padding:12px;
+    background:#fff;
+    color:#111;
+    padding:14px;
     border-radius:14px;
-    margin-bottom:12px;
     font-size:15px;
     font-weight:600;
-}
-
-.politica{
-    background:#009739;
-    color:#fff;
-}
-
-.mulher{
-    background:#ffd8e8;
-    color:#d10072;
+    margin-bottom:12px;
 }
 
 /* TEXTO */
 .frase{
     font-size:15px;
     line-height:1.7;
-    color:#222;
+    color:#fff;
     margin:18px 0 25px;
 }
 
@@ -102,19 +92,18 @@ body{
 }
 
 .links a{
-    background:#111;
-    color:#fff;
+    background:#fff;
+    color:#111;
     text-decoration:none;
     padding:14px;
     border-radius:14px;
     font-size:15px;
-    font-weight:500;
+    font-weight:600;
     transition:0.3s;
 }
 
 .links a:hover{
     transform:translateY(-3px);
-    background:#000;
 }
 
 /* FORM */
@@ -126,7 +115,7 @@ body{
 
 textarea{
     width:100%;
-    min-height:140px;
+    min-height:130px;
     resize:none;
     border:none;
     border-radius:18px;
@@ -134,12 +123,12 @@ textarea{
     font-size:15px;
     font-family:'Poppins', sans-serif;
     outline:none;
-    background:url('Quadri opnião.png') center/cover no-repeat;
+    background:#fff;
     color:#111;
 }
 
 textarea::placeholder{
-    color:#555;
+    color:#666;
 }
 
 button{
@@ -151,43 +140,19 @@ button{
     font-size:15px;
     font-weight:600;
     cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover{
-    transform:translateY(-2px);
-    background:#095d23;
-}
-
-button:disabled{
-    opacity:0.7;
-    cursor:not-allowed;
 }
 
 /* RESPONSIVO */
 @media(max-width:480px){
 
-    .content{
-        padding:25px 18px;
-    }
-
     .foto{
-        width:140px;
-        height:140px;
+        width:180px;
+        height:180px;
     }
 
     .nome{
         font-size:22px;
         letter-spacing:4px;
-    }
-
-    .frase{
-        font-size:14px;
-    }
-
-    .tag{
-        font-size:14px;
-        padding:10px;
     }
 
 }
