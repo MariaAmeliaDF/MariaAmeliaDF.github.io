@@ -38,7 +38,7 @@ body{
 .foto-container{
     display:flex;
     justify-content:center;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .foto{
@@ -50,6 +50,14 @@ body{
     border:4px solid #fff;
     display:block;
     box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* TEXTO ABAIXO DA FOTO */
+.frase{
+    color:#fff;
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:22px;
 }
 
 /* NOME */
@@ -73,20 +81,12 @@ body{
     margin-bottom:12px;
 }
 
-/* TEXTO */
-.frase{
-    color:#fff;
-    font-size:16px;
-    line-height:1.7;
-    margin:20px 0 25px;
-}
-
 /* LINKS */
 .links{
     display:flex;
     flex-direction:column;
     gap:12px;
-    margin-bottom:22px;
+    margin:22px 0;
 }
 
 .links a{
@@ -133,4 +133,31 @@ body{
     background:#0c7a2f;
     color:#fff;
     border:none;
-    padding:15p
+    padding:15px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.form-opiniao button:hover{
+    background:#095d23;
+}
+
+/* RESPONSIVO */
+@media(max-width:480px){
+
+    .foto{
+        width:180px;
+        height:180px;
+    }
+
+    .nome{
+        font-size:24px;
+    }
+
+    .frase{
+        font-size:15px;
+    }
+
+}
