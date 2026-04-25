@@ -67,9 +67,11 @@ body{
     max-width:140%;
     height:auto;
     display:block;
-    margin:25px auto 25px auto;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    margin:25px 0 25px 0;
 }
-
 
 
 
