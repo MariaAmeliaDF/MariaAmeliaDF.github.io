@@ -62,14 +62,14 @@ body{
     box-shadow:0 12px 30px rgba(0,0,0,0.25);
 }
 
+/* LOGO AJUSTADO */
 .logo{
-    width:9px;
-    max-width:5%;
+    width:240px;
+    max-width:85%;
     height:auto;
     display:block;
-    margin:8px auto 12px auto;
+    margin:12px auto 18px auto;
 }
-
 
 /* TEXTO */
 .bio{
