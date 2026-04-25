@@ -64,13 +64,12 @@ body{
 
 /* LOGO */
 .logo{
-    width:100%;
-    max-width:420px;
+    width:220px;
+    max-width:75%;
     height:auto;
     display:block;
-    margin:18px auto 25px auto;
+    margin:12px auto 18px auto;
 }
-
 
 /* TEXTO */
 .bio{
@@ -96,6 +95,11 @@ body{
     border-radius:14px;
     font-size:16px;
     font-weight:600;
+    transition:0.3s;
+}
+
+.links a:hover{
+    transform:translateY(-2px);
 }
 
 /* FORM */
@@ -122,4 +126,9 @@ body{
     border-radius:14px;
     font-weight:600;
     cursor:pointer;
+    transition:0.3s;
+}
+
+.opiniao button:hover{
+    background:#08752c;
 }
