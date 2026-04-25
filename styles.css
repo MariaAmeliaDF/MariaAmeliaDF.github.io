@@ -64,12 +64,13 @@ body{
 
 /* LOGO */
 .logo{
-    width:220px;
-    max-width:80%;
+    width:100%;
+    max-width:420px;
     height:auto;
     display:block;
-    margin:18px auto;
+    margin:18px auto 25px auto;
 }
+
 
 /* TEXTO */
 .bio{
