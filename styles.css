@@ -25,7 +25,7 @@ body{
     background:rgba(0,0,0,0.45);
 }
 
-/* CARD */
+/* CONTEÚDO */
 .content{
     position:relative;
     z-index:2;
@@ -34,53 +34,51 @@ body{
     text-align:center;
 }
 
-/* FOTO QUADRADA */
+/* FOTO */
 .foto-container{
     display:flex;
     justify-content:center;
-    margin-bottom:18px;
+    margin-bottom:20px;
 }
 
 .foto{
     width:220px;
     height:220px;
-    border-radius:18px;
     object-fit:cover;
     object-position:center top;
+    border-radius:18px;
     border:4px solid #fff;
-    box-shadow:0 10px 25px rgba(0,0,0,0.18);
     display:block;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 /* NOME */
 .nome{
     font-family:'Montserrat', sans-serif;
-    font-size:26px;
-    font-weight:600;
-    letter-spacing:6px;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:3px;
     color:#fff;
     margin-bottom:18px;
 }
 
-/* BARRAS IGUAL LINKS */
+/* BARRAS */
 .tag{
-    display:block;
-    width:100%;
     background:#fff;
     color:#111;
     padding:14px;
     border-radius:14px;
-    font-size:15px;
+    font-size:16px;
     font-weight:600;
     margin-bottom:12px;
 }
 
 /* TEXTO */
 .frase{
-    font-size:15px;
-    line-height:1.7;
     color:#fff;
-    margin:18px 0 25px;
+    font-size:16px;
+    line-height:1.7;
+    margin:20px 0 25px;
 }
 
 /* LINKS */
@@ -88,16 +86,16 @@ body{
     display:flex;
     flex-direction:column;
     gap:12px;
-    margin-bottom:25px;
+    margin-bottom:22px;
 }
 
 .links a{
     background:#fff;
     color:#111;
     text-decoration:none;
-    padding:14px;
+    padding:15px;
     border-radius:14px;
-    font-size:15px;
+    font-size:16px;
     font-weight:600;
     transition:0.3s;
 }
@@ -113,12 +111,12 @@ body{
     gap:12px;
 }
 
-textarea{
+.form-opiniao textarea{
     width:100%;
     min-height:130px;
-    resize:none;
     border:none;
     border-radius:18px;
+    resize:none;
     padding:18px;
     font-size:15px;
     font-family:'Poppins', sans-serif;
@@ -127,32 +125,12 @@ textarea{
     color:#111;
 }
 
-textarea::placeholder{
+.form-opiniao textarea::placeholder{
     color:#666;
 }
 
-button{
+.form-opiniao button{
     background:#0c7a2f;
     color:#fff;
     border:none;
-    padding:14px;
-    border-radius:14px;
-    font-size:15px;
-    font-weight:600;
-    cursor:pointer;
-}
-
-/* RESPONSIVO */
-@media(max-width:480px){
-
-    .foto{
-        width:180px;
-        height:180px;
-    }
-
-    .nome{
-        font-size:22px;
-        letter-spacing:4px;
-    }
-
-}
+    padding:15p
