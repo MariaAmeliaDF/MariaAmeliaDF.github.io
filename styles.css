@@ -59,10 +59,30 @@ body{
 .nome{
     font-family:'Montserrat', sans-serif;
     font-size:26px;
-    font-weight:500;
-    letter-spacing:8px;
+    font-weight:600;
+    letter-spacing:6px;
     color:#111;
     margin-bottom:18px;
+}
+
+/* BARRAS */
+.tag{
+    width:100%;
+    padding:12px;
+    border-radius:14px;
+    margin-bottom:12px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.politica{
+    background:#009739;
+    color:#fff;
+}
+
+.mulher{
+    background:#ffd8e8;
+    color:#d10072;
 }
 
 /* TEXTO */
@@ -70,7 +90,7 @@ body{
     font-size:15px;
     line-height:1.7;
     color:#222;
-    margin-bottom:25px;
+    margin:18px 0 25px;
 }
 
 /* LINKS */
@@ -106,14 +126,20 @@ body{
 
 textarea{
     width:100%;
-    min-height:120px;
+    min-height:140px;
     resize:none;
     border:none;
-    border-radius:14px;
-    padding:15px;
+    border-radius:18px;
+    padding:18px;
     font-size:15px;
     font-family:'Poppins', sans-serif;
     outline:none;
+    background:url('Quadri opnião.png') center/cover no-repeat;
+    color:#111;
+}
+
+textarea::placeholder{
+    color:#555;
 }
 
 button{
@@ -141,6 +167,10 @@ button:disabled{
 /* RESPONSIVO */
 @media(max-width:480px){
 
+    .content{
+        padding:25px 18px;
+    }
+
     .foto{
         width:140px;
         height:140px;
@@ -148,11 +178,16 @@ button:disabled{
 
     .nome{
         font-size:22px;
-        letter-spacing:5px;
+        letter-spacing:4px;
     }
 
     .frase{
         font-size:14px;
+    }
+
+    .tag{
+        font-size:14px;
+        padding:10px;
     }
 
 }
