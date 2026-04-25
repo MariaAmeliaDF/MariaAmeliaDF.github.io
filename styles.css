@@ -11,14 +11,13 @@ body{
 }
 
 /* FUNDO */
-.hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px 15px;
-    position:relative;
-    overflow:hidden;
+..video-bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:0;
 }
 .video-bg{
     position:absolute;
