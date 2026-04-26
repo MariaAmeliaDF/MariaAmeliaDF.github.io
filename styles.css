@@ -1,35 +1,113 @@
-/* BOTÃO DESTAQUE */
-.botao {
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* VÍDEO */
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY ESCURO */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* CONTEÚDO */
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* FOTO */
+.foto-box {
+  margin-top: 30px;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* LOGO */
+.logo {
+  width: 180px;
+  margin: 20px 0;
+}
+
+/* BIO */
+.bio {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* LINKS PADRÃO (brancos) */
+.links a {
+  display: block;
+  background: white;
+  color: #333;
+  padding: 14px;
+  margin: 8px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* BOTÃO DESTAQUE (mantendo branco) */
+.botao.destaque {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
 
-  padding: 14px;
-  margin-bottom: 12px;
-
-  border-radius: 12px;
-  text-decoration: none;
-
-  font-weight: 600;
-  font-size: 15px;
-
-  transition: all 0.3s ease;
+  border: 2px solid #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.15);
 }
 
-/* BOTÃO PRINCIPAL (campanha) */
-.botao.destaque {
-  background: linear-gradient(135deg, #16a34a, #22c55e);
+/* HOVER */
+.links a:hover {
+  transform: scale(1.02);
+}
+
+/* FORM */
+.opiniao {
+  margin-top: 30px;
+}
+
+.opiniao input,
+.opiniao textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.opiniao button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
   color: white;
-  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
-}
-
-/* Hover */
-.botao:hover {
-  transform: scale(1.03);
-}
-
-/* Ícone */
-.botao .icone {
-  font-size: 18px;
+  font-weight: bold;
 }
