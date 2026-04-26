@@ -1,237 +1,86 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
 }
 
-body{
-    font-family:'Poppins', sans-serif;
-    background:#000;
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  text-align: center;
 }
 
-/* HERO */
-.hero{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px 15px;
-    position:relative;
-    overflow:hidden;
+/* Título */
+.titulo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1E3A8A;
+  margin-bottom: 10px;
 }
 
-/* VIDEO FUNDO */
-.video-bg{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:0;
+/* Subtítulo */
+.subtitulo {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
 }
 
-/* ESCURECER VIDEO */
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.45);
-    z-index:1;
+/* Botão */
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 14px 18px;
+  margin: 10px 0;
+
+  background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 12px;
+  text-decoration: none;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s ease;
 }
 
-/* CONTAINER */
-.container{
-    position:relative;
-    z-index:2;
-    width:100%;
-    max-width:430px;
-    text-align:center;
-    margin:0 auto;
+/* Hover do botão */
+.botao:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* FOTO */
-.foto-box{
-    display:flex;
-    justify-content:center;
-    margin-bottom:18px;
+/* Ícone */
+.icone {
+  font-size: 20px;
 }
 
-.foto{
-    width:230px;
-    height:230px;
-    object-fit:cover;
-    border-radius:20px;
-    border:4px solid #fff;
-    box-shadow:0 12px 30px rgba(0,0,0,0.28);
+/* Rodapé */
+.rodape {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #888;
 }
 
-/* LOGO */
-.logo{
-    width:680px;
-    max-width:92%;
-    height:auto;
-    display:block;
-    margin:20px auto 28px auto;
-}
+/* Responsividade (celular menor) */
+@media (max-width: 360px) {
+  .titulo {
+    font-size: 20px;
+  }
 
-/* TEXTO */
-.bio{
-    color:#fff;
-    font-size:16px;
-    line-height:1.7;
-    margin-bottom:22px;
-    text-shadow:0 3px 10px rgba(0,0,0,0.35);
-}
-
-/* LINKS */
-.links{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    margin:24px 0;
-}
-
-/* BASE BOTÕES */
-.links a{
-    background:#fff;
-    color:#111;
-    text-decoration:none;
-    padding:15px;
-    border-radius:14px;
-    font-size:16px;
-    font-weight:600;
-    transition:all 0.25s ease;
-    box-shadow:0 8px 20px rgba(0,0,0,0.12);
-    border:2px solid transparent;
-}
-
-/* HOVER GLOBAL */
-.links a:hover{
-    transform:translateY(-3px) scale(1.01);
-}
-
-/* BOTÃO X (minimalista) */
-.link-x{
-    font-size:22px;
-    font-weight:900;
-    letter-spacing:1px;
-    border:2px solid #111;
-}
-
-.link-x:hover{
-    background:#111;
-    color:#fff;
-}
-
-/* FACEBOOK (clean com identidade) */
-.link-facebook{
-    border:2px solid #1877F2;
-}
-
-.link-facebook:hover{
-    background:#1877F2;
-    color:#fff;
-}
-
-/* WHATSAPP (verde elegante) */
-.link-whatsapp{
-    border:2px solid #25D366;
-}
-
-.link-whatsapp:hover{
-    background:#25D366;
-    color:#fff;
-}
-
-/* INSTAGRAM (gradiente suave no hover) */
-.link-instagram{
-    border:2px solid #e1306c;
-}
-
-.link-instagram:hover{
-    background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
-    color:#fff;
-    border:2px solid transparent;
-}
-
-/* FORMULÁRIO */
-.opiniao{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    margin-top:18px;
-}
-
-.titulo-formulario{
-    color:#fff;
-    font-size:22px;
-    font-weight:700;
-    margin-bottom:8px;
-    text-shadow:0 3px 10px rgba(0,0,0,0.35);
-}
-
-.opiniao input,
-.opiniao textarea{
-    width:100%;
-    background:#fff;
-    border:none;
-    border-radius:14px;
-    padding:15px;
-    font-size:15px;
-    font-family:'Poppins', sans-serif;
-    outline:none;
-}
-
-.opiniao textarea{
-    min-height:130px;
-    resize:none;
-}
-
-.opiniao button{
-    background:#0a8f35;
-    color:#fff;
-    border:none;
-    padding:15px;
-    border-radius:14px;
-    font-size:16px;
-    font-weight:700;
-    cursor:pointer;
-    transition:0.3s ease;
-}
-
-.opiniao button:hover{
-    background:#08752c;
-    transform:translateY(-2px);
-}
-
-/* RESPONSIVO */
-@media screen and (max-width:768px){
-
-    .container{
-        max-width:360px;
-    }
-
-    .foto{
-        width:190px;
-        height:190px;
-    }
-
-    .logo{
-        width:280px;
-        max-width:75vw;
-        margin:18px auto 22px auto;
-    }
-
-    .bio{
-        font-size:15px;
-    }
-
-    .links a{
-        font-size:15px;
-        padding:14px;
-    }
-
-    .titulo-formulario{
-        font-size:18px;
-    }
-
+  .botao {
+    font-size: 14px;
+    padding: 12px;
+  }
 }
