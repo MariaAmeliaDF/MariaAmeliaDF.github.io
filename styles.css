@@ -6,6 +6,7 @@
 
 body{
     font-family:'Poppins', sans-serif;
+    background:#000;
 }
 
 /* HERO */
@@ -60,7 +61,7 @@ body{
     object-fit:cover;
     border-radius:20px;
     border:4px solid #fff;
-    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+    box-shadow:0 12px 30px rgba(0,0,0,0.28);
 }
 
 /* LOGO */
@@ -90,37 +91,28 @@ body{
 }
 
 .links a{
-    background:#ffffff;
-    color:#111111;
+    background:#fff;
+    color:#111;
     text-decoration:none;
     padding:15px;
     border-radius:14px;
     font-size:16px;
     font-weight:600;
-    transition:0.3s;
+    transition:0.3s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
 .links a:hover{
     transform:translateY(-2px);
-    background:#ffffff;
-    color:#111111;
 }
 
-/* X PRETO EM BARRA BRANCA */
-a.link-x,
-.links a.link-x,
-.links .link-x{
-    background:#ffffff !important;
-    color:#000000 !important;
+/* BOTÃO X */
+.link-x{
+    background:#fff !important;
+    color:#000 !important;
     font-size:24px !important;
     font-weight:900 !important;
-    border-radius:14px;
-}
-
-a.link-x:hover,
-.links a.link-x:hover{
-    background:#ffffff !important;
-    color:#000000 !important;
+    letter-spacing:1px;
 }
 
 /* FORMULÁRIO */
@@ -132,7 +124,7 @@ a.link-x:hover,
 }
 
 .titulo-formulario{
-    color:#ffffff;
+    color:#fff;
     font-size:22px;
     font-weight:700;
     margin-bottom:8px;
@@ -142,7 +134,7 @@ a.link-x:hover,
 .opiniao input,
 .opiniao textarea{
     width:100%;
-    background:#ffffff;
+    background:#fff;
     border:none;
     border-radius:14px;
     padding:15px;
@@ -158,21 +150,22 @@ a.link-x:hover,
 
 .opiniao button{
     background:#0a8f35;
-    color:#ffffff;
+    color:#fff;
     border:none;
     padding:15px;
     border-radius:14px;
     font-size:16px;
-    font-weight:600;
+    font-weight:700;
     cursor:pointer;
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
 .opiniao button:hover{
     background:#08752c;
+    transform:translateY(-2px);
 }
 
-/* CELULAR */
+/* RESPONSIVO */
 @media screen and (max-width:768px){
 
     .container{
