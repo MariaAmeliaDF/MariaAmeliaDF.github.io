@@ -5,33 +5,29 @@
     box-sizing:border-box;
 }
 
-/* BASE */
 body{
     font-family:'Poppins', sans-serif;
-    color:#fff;
-    background:#fff; /* fundo branco fora da section */
+    background:#fff;
 }
 
 /* HERO */
 .hero{
-    position:relative;
     min-height:100vh;
-    overflow:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
     padding:30px 15px;
+    position:relative;
+    overflow:hidden;
 }
 
-/* VÍDEO FUNDO */
+/* VIDEO */
 .video-bg{
     position:absolute;
-    top:50%;
-    left:50%;
-    width:120%;
-    height:120%;
+    inset:0;
+    width:100%;
+    height:100%;
     object-fit:cover;
-    transform:translate(-50%, -50%);
     z-index:0;
 }
 
@@ -39,10 +35,7 @@ body{
 .overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.80)
-    );
+    background:rgba(0,0,0,0.45);
     z-index:1;
 }
 
@@ -51,172 +44,126 @@ body{
     position:relative;
     z-index:2;
     width:100%;
-    max-width:420px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding:22px;
-
-    background:rgba(255,255,255,0.08);
-    border-radius:24px;
-    backdrop-filter:blur(10px);
+    max-width:430px;
+    text-align:center;
+    margin:0 auto;
 }
 
 /* FOTO */
 .foto-box{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    overflow:hidden;
-    border:4px solid #fff;
-    margin-bottom:16px;
+    display:flex;
+    justify-content:center;
+    margin-bottom:18px;
 }
 
 .foto{
-    width:100%;
-    height:100%;
+    width:220px;
+    height:220px;
     object-fit:cover;
+    border-radius:20px;
+    border:4px solid #fff;
 }
 
 /* LOGO */
 .logo{
-    width:260px;
+    width:300px;
     max-width:90%;
-    margin-bottom:18px;
+    margin:18px auto 22px auto;
+    display:block;
 }
 
 /* BIO */
 .bio{
-    text-align:center;
-    font-size:14px;
-    line-height:1.6;
-    margin-bottom:22px;
     color:#fff;
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:24px;
 }
 
 /* LINKS */
 .links{
-    width:100%;
     display:flex;
     flex-direction:column;
     gap:12px;
-    margin-bottom:24px;
 }
 
 .links a{
-    text-decoration:none;
-    color:#111;
     background:#fff;
-    padding:14px;
+    color:#111;
+    text-decoration:none;
     border-radius:14px;
-    text-align:center;
+    padding:15px 18px;
     font-weight:600;
-    transition:0.3s;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.links a i{
-    margin-right:8px;
-    font-size:18px;
+/* ICONE ESQUERDA */
+.icone{
+    position:absolute;
+    left:18px;
+    font-size:22px;
 }
 
+/* TEXTO CENTRAL */
+.texto{
+    width:100%;
+    text-align:center;
+}
+
+/* CORES REAIS */
+.instagram{
+    color:#E1306C;
+}
+
+.whatsapp{
+    color:#25D366;
+}
+
+.facebook{
+    color:#1877F2;
+}
+
+.xicon{
+    color:#000;
+}
+
+/* HOVER */
 .links a:hover{
     transform:translateY(-2px);
-}
-
-/* X */
-.link-x{
-    color:#000 !important;
-    font-size:22px;
-    font-weight:800;
-}
-
-.link-x i{
-    margin-right:0;
-}
-
-/* FACEBOOK */
-.link-facebook{
-    background:#1877F2 !important;
-    color:#fff !important;
-}
-
-/* FORMULÁRIO */
-.opiniao{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-.titulo-formulario{
-    text-align:center;
-    font-size:20px;
-    font-weight:700;
-    margin-bottom:6px;
-    color:#fff;
-}
-
-.opiniao input,
-.opiniao textarea{
-    width:100%;
-    border:none;
-    border-radius:14px;
-    padding:14px;
-    font-size:15px;
-    font-family:'Poppins', sans-serif;
-    outline:none;
-    background:#fff;
-}
-
-.opiniao textarea{
-    min-height:130px;
-    resize:none;
-}
-
-.opiniao button{
-    border:none;
-    border-radius:14px;
-    padding:15px;
-    font-size:16px;
-    font-weight:700;
-    cursor:pointer;
-    color:#fff;
-    background:linear-gradient(135deg,#0a8f35,#18b84f);
     transition:0.3s;
 }
 
-.opiniao button:hover{
-    transform:translateY(-2px);
-}
-
-/* RESPONSIVO */
-@media(max-width:480px){
+/* MOBILE */
+@media(max-width:768px){
 
     .container{
         max-width:360px;
-        padding:18px;
     }
 
-    .foto-box{
-        width:130px;
-        height:130px;
+    .foto{
+        width:190px;
+        height:190px;
     }
 
     .logo{
-        width:220px;
+        width:260px;
     }
 
     .bio{
-        font-size:13px;
-    }
-
-    .titulo-formulario{
-        font-size:18px;
+        font-size:14px;
     }
 
     .links a{
-        padding:13px;
         font-size:15px;
+        padding:14px 16px;
+    }
+
+    .icone{
+        left:14px;
+        font-size:20px;
     }
 
 }
